@@ -14,10 +14,12 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
 		
 		<script type="module">
-			import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.117.1/three.min.js";
+			import three from 'https://cdn.jsdelivr.net/npm/three@0.170.1/+esm';
         		import { FBXLoader } from "https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/loaders/FBXLoader.js";
 			var camera, scene, renderer;
 			var geometry, material, mesh;
+
+			const THREE = three;
 
 			function init() {
 
